@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="740.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.utenti.UtentiController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="244.0" style="-fx-background-color: #104E8B;">
+         <children>
+            <ImageView fitHeight="108.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logoSerieA.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="90.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="aggiorna" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToAggiorna" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Aggiorna" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/aggiorna.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </Button>
+            <Button fx:id="aggrim" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToAggRimFeed" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Aggiungi/rimuovi feed" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/aggiungi.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button fx:id="rimnotizie" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToRimuoviNotizie" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Rimuovi notizie" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/eliminare.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Blend />
+               </effect>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Gestisci utenti" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-gruppo-di-utenti-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Blend />
+               </effect>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button fx:id="rim_commenti" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToRimuoviCommenti" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Rimuovi commenti" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/commenti.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Blend />
+               </effect>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button fx:id="imp_esp_file" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToImpEspFile" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Importa/esporta da file" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-documento-aperto-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Blend />
+               </effect>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button fx:id="admin" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToAdmin" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Profilo amministratore" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-impostazioni-amministratore-maschio-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Blend />
+               </effect>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="btn_blocca_per_userid" layoutX="445.0" layoutY="295.0" mnemonicParsing="false" onAction="#bloccaUtentePerUserId" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #7CCD7C;" text="Blocca utente" />
+      <TableView fx:id="tabella_utenti" layoutX="252.0" layoutY="14.0" prefHeight="206.0" prefWidth="480.0">
+         <columns>
+            <TableColumn fx:id="col_chatid_utenti" prefWidth="172.79998779296875" text="CHAT ID" />
+            <TableColumn fx:id="col_nickname_utenti" prefWidth="220.80001831054688" text="NICKNAME" />
+            <TableColumn fx:id="col_ban" prefWidth="85.5999755859375" text="BAN" />
+         </columns>
+      </TableView>
+      <Label layoutX="443.0" layoutY="228.0" style="-fx-font-weight: bold;" text="BLOCCA UTENTI" textFill="#104e8b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inserimento_userid" layoutX="395.0" layoutY="255.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci user ID" />
+      <Label layoutX="326.0" layoutY="258.0" style="-fx-font-weight: bold;" text="User ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_rimosso_per_userid" layoutX="413.0" layoutY="334.0" prefHeight="18.0" prefWidth="162.0" textFill="GREEN" />
+      <Button fx:id="btn_sblocca_per_userid" layoutX="444.0" layoutY="427.0" mnemonicParsing="false" onAction="#sbloccaUtentePerUserId" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #7CCD7C;" text="Sblocca utente" />
+      <Label layoutX="432.0" layoutY="362.0" style="-fx-font-weight: bold;" text="SBLOCCA UTENTI" textFill="#104e8b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inserimento_sblocco_userid" layoutX="393.0" layoutY="389.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci user ID" />
+      <Label layoutX="328.0" layoutY="393.0" style="-fx-font-weight: bold;" text="User ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_sbloccato" layoutX="412.0" layoutY="467.0" prefHeight="18.0" prefWidth="162.0" textFill="GREEN" />
+   </children>
+</AnchorPane>
