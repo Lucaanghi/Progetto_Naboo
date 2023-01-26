@@ -14,7 +14,7 @@ public class LikeDislike {
     private int likeDislike;
     @Column(name = "FK_utente")
     private int FK_utente;
-    @Column(name = "FK_notizie")
+    @Column(name = "FK_notizia")
     private int FK_notizie;
 
     public int getId_likeDislike() {
