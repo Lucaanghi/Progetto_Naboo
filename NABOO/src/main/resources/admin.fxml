@@ -96,7 +96,7 @@
                   <Insets left="30.0" />
                </padding>
             </Button>
-            <Button fx:id="imp_esp_file" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToImpEspFile" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Importa/esporta da file" textFill="WHITE">
+            <Button fx:id="imp_esp_file" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToImpEspFile" prefHeight="57.0" prefWidth="244.0" style="-fx-background-color: #1C86EE;" text="Importa da file" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
