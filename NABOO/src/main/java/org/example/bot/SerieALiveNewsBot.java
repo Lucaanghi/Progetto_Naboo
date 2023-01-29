@@ -1,7 +1,6 @@
 //COLLEGAMENTO CON BOT E TUTTI RELATIVI COMANDI
 package org.example.bot;
 
-import org.example.bottone.Bottone;
 import org.example.commenti.Commento;
 import org.example.database.HibernateUtil;
 import org.example.likedislike.LikeDislike;
@@ -32,9 +31,9 @@ class SerieALiveNewsBot extends TelegramLongPollingBot {
     //Dichiarazione oggetto utente
     Utente u = new Utente();
     //Dichiarazione bottono (Commento, Like, Dislike)
-    Bottone InlineKeyboardButtonCommento = new Bottone();
-    Bottone InlineKeyboardButtonLike = new Bottone();
-    Bottone InlineKeyboardButtonDislike = new Bottone();
+    InlineKeyboardButton InlineKeyboardButtonCommento = new InlineKeyboardButton();
+    InlineKeyboardButton InlineKeyboardButtonLike = new InlineKeyboardButton();
+    InlineKeyboardButton InlineKeyboardButtonDislike = new InlineKeyboardButton();
     //Dichiarazione flag (variabili boolean che identificano l'attivazione o meno dello stato di vari processi
     boolean flagCommento = false;
     boolean flagLike = false;
@@ -315,7 +314,7 @@ class SerieALiveNewsBot extends TelegramLongPollingBot {
                             System.out.println(e);
                         }
                         if(i.size()>0){
-                            String query = "INSERT INTO likedislike (LikeDislike, FK_utente, FK_notizie) VALUES (" + l1.getLikeDislike() + "," + l1.getFK_utente() + "," + l1.getFK_notizie() + ")";
+                            String query = "INSERT INTO likedislike (LikeDislike, FK_utente, FK_notizia) VALUES (" + l1.getLikeDislike() + "," + l1.getFK_utente() + "," + l1.getFK_notizie() + ")";
                             session.createNativeQuery(query).executeUpdate();
                             risposta.setText("Il tuo voto è stato registrato. \t\n"
                                     + "Grazie per avere votato!");
@@ -353,7 +352,7 @@ class SerieALiveNewsBot extends TelegramLongPollingBot {
                             System.out.println(e);
                         }
                         if(i.size()>0){
-                            String query = "INSERT INTO likedislike (LikeDislike, FK_utente, FK_notizie) VALUES (" + l1.getLikeDislike() + "," + l1.getFK_utente() + "," + l1.getFK_notizie() + ")";
+                            String query = "INSERT INTO likedislike (LikeDislike, FK_utente, FK_notizia) VALUES (" + l1.getLikeDislike() + "," + l1.getFK_utente() + "," + l1.getFK_notizie() + ")";
                             session.createNativeQuery(query).executeUpdate();
                             risposta.setText("Il tuo voto è stato registrato. \t\n"
                                     + "Ci dispiace che la notizia non sia di tuo gradimento, lascia un commento su come possiamo migliorare.\r\n"
