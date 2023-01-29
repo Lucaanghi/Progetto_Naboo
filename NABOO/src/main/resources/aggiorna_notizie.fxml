@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="740.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pannelloFx.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="740.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.naboo.pannelloFx.MainController">
    <children>
       <VBox prefHeight="500.0" prefWidth="244.0" style="-fx-background-color: #104E8B;">
          <children>
@@ -138,7 +138,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Label fx:id="label_notizie_aggiornate" layoutX="395.0" layoutY="353.0" prefHeight="18.0" prefWidth="198.0" textFill="GREEN" />
-      <Label fx:id="label_errore_aggiornamento" layoutX="395.0" layoutY="362.0" prefHeight="18.0" prefWidth="198.0" textFill="RED" />
+      <Label fx:id="label_notizie_aggiornate" layoutX="406.0" layoutY="351.0" prefHeight="18.0" prefWidth="177.0" textFill="GREEN" />
+      <Label fx:id="label_errore_aggiornamento" layoutX="395.0" layoutY="351.0" prefHeight="9.0" prefWidth="198.0" textFill="RED" />
    </children>
 </AnchorPane>

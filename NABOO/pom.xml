@@ -79,7 +79,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>org.example.pannelloFx.MainJFx</mainClass>
+                    <mainClass>org.naboo.pannelloFx.MainJFx</mainClass>
                 </configuration>
             </plugin>
         </plugins>
