@@ -1,5 +1,5 @@
 # Progetto_Naboo
-### Progetto universitario, bot telegram sulle ntozie di serie A
+### Progetto universitario, bot telegram sulle notizie di Serie A
 
 #### Membri del gruppo:
 <ul>
@@ -18,7 +18,7 @@
 </ul>
 </ul>
 
-#### Descrizione del progetto generale:
+#### Descrizione del progetto:
 NABOO è un progetto universitario che consiste nella realizzazione di un Bot Telegram e di un pannello grafico che consentono la raccolta di diverse fonti (Feed RSS): queste vengono aggregate e rese fruibili agli utenti che utilizzeranno il bot.<br>
 NABOO permette inoltre di gestire: notizie, utenti, commenti ed altre funzionalità tramite il pannello grafico accessibile soltanto agli amministratori.
 
@@ -28,11 +28,11 @@ Abbiamo scelto questo tema perché siamo entrambi appassionati di calcio e ci se
 
 #### Descrizione del bot telegram:
 Serie A Live News Bot è un bot di notizie calcistiche a cui ci si registra in automatico appena l’utente avvia il bot.<br>
-Successivamente l’utente potrà scegliere quali notizie vuole visualizzare suddivise per squadra; una volta caricate le notizie potrà commentarle e/o votarle (like/dislike).<br>
+Successivamente l’utente potrà scegliere quali notizie visualizzare suddivise per squadra; una volta caricate le notizie potrà commentarle e/o votarle (like/dislike).<br>
 
 
 #### Descrizione del pannello grafico:
-Il pannello grafico è realizzato con JavaFX e permette agli amministratori di NABOO di aggiornare le notizie dai feed o da file, gestire gli utenti, i commenti e le fonti.<br>
+Il pannello grafico è realizzato con JavaFX e permette agli amministratori di NABOO di aggiornare le notizie dai Feed o da file (.txt), gestire gli utenti, i commenti e le fonti.<br>
 Tutte le modifiche apportate dagli amministratori sul pannello grafico sono salvate sul database.
 
 #### Linguaggi/Software utilizzati:
@@ -47,20 +47,20 @@ Tutte le modifiche apportate dagli amministratori sul pannello grafico sono salv
 </ul>
 <li>Librerie</li>
 <ul>
-<li>Abbiamo utilizzato Maven per gestire tutte le librerie e tenere il codice pulito</li>
+<li>Abbiamo utilizzato Maven per gestire tutte le librerie e tenere il codice pulito.</li>
 </ul>
 </ul>
 
 #### Funzionamento Telegram bot:
 <ol>
 <li>Registrazione</li>
-Gli utenti vengono registrati all’invio del comando /start (che avvia il bot), vengono prelevati username o nome utenete telegramn
+Gli utenti vengono registrati in automatico all’invio del comando /start (che avvia il bot), contestualmente viene salvalo lo username o il nome utente Telegram.
 <li>Visualizzazione del menù di bottoni</li>
-il bot manda un messaggio contenente un menù di bottoni che sono associati ad una squadra di Serie A.
+Il bot manda un messaggio contenente un menù di bottoni, ognuno è associato alla corrispondente squadra di Serie A.
 <li>Visualizzazione notizie</li>
-Al premere di un bottone vengono visualizzate le corrispettive notizie
+Premendo i bottoni vengono visualizzate le corrispettive notizie.
 <li>Valutazione notizia</li>
-E' anche possibile lasciare un commento o una valutazione ad ogni singola notizia
+E' anche possibile lasciare un commento o una valutazione ad ogni singola notizia.
 </ol>
 
 #### Funzionamento Pannello grafico:
