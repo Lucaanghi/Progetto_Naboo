@@ -3,37 +3,46 @@
 
 #### Membri del gruppo:
 <ul>
-<li> Anghinolfi Luca: 
-<ul>
-<li> email: luca.anghinolfi2@studio.unibo.it</ll>  
-<li> num. tel: +39 345 957 6969 </ll>
-</ul>
+   <li>Anghinolfi Luca:</li>
+  <ul>
+     <li>Email: luca.anghinolfi2@studio.unibo.it</li>
+     <li>Num. tel: +39 345 957 6969</ll>
+  </ul>
 </ul>
 
 <ul>
-<li> Rossi Tommaso: 
-<ul>
-<li> email: tommaso.rossi23@studio.unibo.it</ll>  
-<li> num. tel: +39 366 328 7560 </ll>
-</ul>
+  <li> Rossi Tommaso:</li>
+  <ul>
+      <li>Email: tommaso.rossi23@studio.unibo.it</li>  
+      <li>Num. tel: +39 366 328 7560</li>
+  </ul>
 </ul>
 
 #### Descrizione del progetto:
-NABOO è un progetto universitario che consiste nella realizzazione di un Bot Telegram e di un pannello grafico che consentono la raccolta di diverse fonti (Feed RSS): queste vengono aggregate e rese fruibili agli utenti che utilizzeranno il bot.<br>
+NABOO è un progetto universitario che consiste nella realizzazione di un Bot Telegram e di un pannello grafico che consentono la raccolta di diverse fonti (Feed RSS): queste vengono aggregate e rese fruibili agli utenti che utilizzeranno il bot.
+
+
 NABOO permette inoltre di gestire: notizie, utenti, commenti ed altre funzionalità tramite il pannello grafico accessibile soltanto agli amministratori.
 
-Il nostro progetto si basa su notizie sportive, nello specifico calcistiche riguardo alle squadre del campionato di Serie A.<br>
+Il nostro progetto si basa su notizie sportive, nello specifico calcistiche riguardo alle squadre del campionato di Serie A.
 
-Abbiamo scelto questo tema perché siamo entrambi appassionati di calcio e ci sembrava interessante sviluppare un ambiente di raccolta e condivisione di notizie valutabili dagli utenti.<br>
+
+Abbiamo scelto questo tema perché siamo entrambi appassionati di calcio e ci sembrava interessante sviluppare un ambiente di raccolta e condivisione di notizie valutabili dagli utenti.
+
 
 #### Descrizione del bot telegram:
-Serie A Live News Bot è un bot di notizie calcistiche a cui ci si registra in automatico appena l’utente avvia il bot.<br>
-Successivamente l’utente potrà scegliere quali notizie visualizzare suddivise per squadra; una volta caricate le notizie potrà commentarle e/o votarle (like/dislike).<br>
+Serie A Live News Bot è un bot di notizie calcistiche a cui ci si registra in automatico appena l’utente avvia il bot.
+
+
+Successivamente l’utente potrà scegliere quali notizie visualizzare suddivise per squadra; una volta caricate le notizie potrà commentarle e/o votarle (like/dislike).
 
 
 #### Descrizione del pannello grafico:
-Il pannello grafico è realizzato con JavaFX e permette agli amministratori di NABOO di aggiornare le notizie dai Feed o da file (.txt), gestire gli utenti, i commenti e le fonti.<br>
+Il pannello grafico è realizzato con JavaFX e permette agli amministratori di NABOO di aggiornare le notizie dai Feed o da file (.txt), gestire gli utenti, i commenti e le fonti.
+
+
 Tutte le modifiche apportate dagli amministratori sul pannello grafico sono salvate sul database.
+
 
 #### Linguaggi/Software utilizzati:
 <ul>
@@ -85,6 +94,11 @@ E' anche possibile lasciare un commento o una valutazione ad ogni singola notizi
 
 
 #### Difficoltà incontrate:
-Durante la creazione del progetto abbiamo incontrato diverse difficoltà che poi siamo riusciti a risolvere ; uno dei primi problemi che abbiamo riscontrato è stato comprendere il funzionamento dei Feed RSS, ma una volta capita la logica ci è risultato molto comodo il loro utilizzo.<br>
-Abbiamo poi voluto implementare il nostro progetto aggiungendo il database e sostituendolo al salvataggio su file, perchè ci sembrava più realistico e più completo; questo ci ha creato alcuni problemi dovuti alla maggiore complessità del salvataggio dei dati e al collegamento con il pannello grafico.<br>
-Utilizzando Javafx ci siamo imbattuti infine nella problematica della creazione e visualizzazione delle varie tabelle per visualizzare i dati contenuti nel database sul pannello grafico.<br>
+Durante la creazione del progetto abbiamo incontrato diverse difficoltà che poi siamo riusciti a risolvere ; uno dei primi problemi che abbiamo riscontrato è stato comprendere il funzionamento dei Feed RSS, ma una volta capita la logica ci è risultato molto comodo il loro utilizzo.
+
+
+Abbiamo poi voluto implementare il nostro progetto aggiungendo il database e sostituendolo al salvataggio su file, perchè ci sembrava più realistico e più completo; questo ci ha creato alcuni problemi dovuti alla maggiore complessità del salvataggio dei dati e al collegamento con il pannello grafico.
+
+
+Utilizzando Javafx ci siamo imbattuti infine nella problematica della creazione e visualizzazione delle varie tabelle per visualizzare i dati contenuti nel database sul pannello grafico.
+
