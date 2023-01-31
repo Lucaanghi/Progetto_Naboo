@@ -65,24 +65,26 @@ E' anche possibile lasciare un commento o una valutazione ad ogni singola notizi
 
 #### Funzionamento Pannello grafico:
 <ol>
-<li> Login </li>
-<li> Aggiornamento Notizie </li>
-Da questa sezione è possibile aggionrare le notizie sul database
-<li> Aggiunta/Rimozione feed </li>
-Da questa sezione è possibile visualizzare i feed da cui si prelevano i dati, rimuoverli o aggiungerne ulteriori
-<li> Rimozione notizie </li>
-Da questa sezione è possibile visualizzare le notizie e rimuoverle
-<li> Gestione utenti </li>
-Da questa sezione è possibile visualizzare gli utenti e in caso bloccarli
-<li> Rimozione commenti </li>
-Da questa sezione è possibile visualizzare e rimuovere i commenti effettuati su telegram 
-<li> Importa notizie da file </li>
-Da questa sezione è possibile importare ntizie da dile esterni
-<li> Profilo amministratore </li>
-Da questa sezione è possibile modificare i di accesso dell'amministrartore, e disconnetersi dal pannello
+  <li>Login</li>
+  <li>Aggiornamento Notizie</li>
+      Da questa sezione è possibile aggiornare le notizie sul database;
+  <li>Aggiunta/Rimozione feed</li>
+      Da questa sezione è possibile visualizzare i feed da cui si prelevano i dati, rimuoverli o aggiungerne altri;
+  <li>Rimozione notizie</li>
+      Da questa sezione è possibile visualizzare le notizie e rimuoverle;
+  <li>Gestione utenti</li>
+      Da questa sezione è possibile visualizzare gli utenti ed eventualmente bloccarli;
+  <li>Rimozione commenti</li>
+      Da questa sezione è possibile visualizzare e rimuovere i commenti effettuati su Telegram;
+  <li>Importa notizie da file</li>
+      Da questa sezione è possibile importare notizie da file esterni;
+  <li>Profilo amministratore</li>
+      Da questa sezione è possibile modificare i dati di accesso dell'amministratore, ed effettuare la disconnessione dal pannello.
 </ol>
 
+
+
 #### Difficoltà incontrate:
-Durante la creazione del progetto abbiamo incontrato diverse difficoltà successivamente risolte; all'inzio abbiamo fatto fatica a comprendere il funzionamento dei Feed RSS, una volta capita la logica ci sono risultati molto comodi.<br>
-Abbiamo voluto implementare il database al posto del salvataggio su file perchè ci semrbava più realistico e più completo; questo ci ha creato vari problemi dovuti alla maggiore complessità del salavataggio dei dati e al collegamento con il pannello grafico.<br>
-Utiilizzando Javafx ci siamo imbattuti in diversi problemi riguardo la creazione e la visualizzazione di varie tabelle per visualizzare i dati contenuti nel database sul pannello grafico.<br>
+Durante la creazione del progetto abbiamo incontrato diverse difficoltà che poi siamo riusciti a risolvere ; uno dei primi problemi che abbiamo riscontrato è stato comprendere il funzionamento dei Feed RSS, ma una volta capita la logica ci è risultato molto comodo il loro utilizzo.<br>
+Abbiamo poi voluto implementare il nostro progetto aggiungendo il database e sostituendolo al salvataggio su file, perchè ci sembrava più realistico e più completo; questo ci ha creato alcuni problemi dovuti alla maggiore complessità del salvataggio dei dati e al collegamento con il pannello grafico.<br>
+Utilizzando Javafx ci siamo imbattuti infine nella problematica della creazione e visualizzazione delle varie tabelle per visualizzare i dati contenuti nel database sul pannello grafico.<br>
