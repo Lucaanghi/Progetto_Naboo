@@ -6,7 +6,7 @@
    <li>Anghinolfi Luca:</li>
   <ul>
      <li>Email: luca.anghinolfi2@studio.unibo.it</li>
-     <li>Num. tel: +39 345 957 6969</ll>
+     <li>Num. tel: +39 345 957 6969</li>
   </ul>
 </ul>
 
