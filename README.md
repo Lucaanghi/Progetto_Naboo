@@ -1,19 +1,88 @@
 # Progetto_Naboo
-### Progetto universitario, bot telegram sulle ntozie di serie A
+### Progetto universitario, bot telegram sulle notizie di Serie A
+
+#### Membri del gruppo:
+<ul>
+<li> Anghinolfi Luca: 
+<ul>
+<li> email: luca.anghinolfi2@studio.unibo.it</ll>  
+<li> num. tel: +39 345 957 6969 </ll>
+</ul>
+</ul>
+
+<ul>
+<li> Rossi Tommaso: 
+<ul>
+<li> email: tommaso.rossi23@studio.unibo.it</ll>  
+<li> num. tel: +39 366 328 7560 </ll>
+</ul>
+</ul>
 
 #### Descrizione del progetto:
-Il gruppo è formato da Anghinolfi Luca e Rossi Tommaso, due studenti del secondo anno di informatica per il management.
-Il progetto Naboo è un applicazione JavaFX in cui gli utenti possono leggere, commentare ed esprime le proprie preferenze riguardanti le notizie.<br>
-Il progetto Naboo ha due interfaccie, l'interfaccia su telegram in cui interagiscono gli utenti, mentre la seconda interfaccia è un pannello di controllo grafico in cui gli admin possono gestire il boto telegram e gli utenti che sono all'interno.
-Tutte le informazioni vengo salvate all'interno di un database che gestisce la mole di informazioni.
-Per la creazione di questo progetto abbiamo utilizzato il linguaggio Java nell'ambiente di sviluppo IntelliJ. <br>
-Abbiamo poi utilizzati altri strumenti che ci hanno aiutato nella programmazione del progetto; Lo strumento Maven che ci ha aiutati nell'organizzare i progetti in maniera pulita,scaricare librerie in modo automatico;
-successivamente abbiamo utilizzato JavaFX per la creazione del pannello grafico e ci siamo aiutati con scene Builder un software che realizza interfacce grafiche.
-Abbiamo utilizzato la tecnologia ROME RSS che ci permetteva di prelevare informazione dai siti per noi interessanti.
+NABOO è un progetto universitario che consiste nella realizzazione di un Bot Telegram e di un pannello grafico che consentono la raccolta di diverse fonti (Feed RSS): queste vengono aggregate e rese fruibili agli utenti che utilizzeranno il bot.<br>
+NABOO permette inoltre di gestire: notizie, utenti, commenti ed altre funzionalità tramite il pannello grafico accessibile soltanto agli amministratori.
 
-### Come fare andare il progetto
-Il nostro programma ha due Main, uno per far partire il bot di telegram e passare le informazioni richieste dall'utente, mentre l'altro Main serve per far partire il panello grafico.
+Il nostro progetto si basa su notizie sportive, nello specifico calcistiche riguardo alle squadre del campionato di Serie A.<br>
 
-### Come usare il progetto
-Durante il progetto abbiamo incontrato diverse difficoltà, sopratutto nell'inserimento di javaFX all'interno del progetto.
+Abbiamo scelto questo tema perché siamo entrambi appassionati di calcio e ci sembrava interessante sviluppare un ambiente di raccolta e condivisione di notizie valutabili dagli utenti.<br>
 
+#### Descrizione del bot telegram:
+Serie A Live News Bot è un bot di notizie calcistiche a cui ci si registra in automatico appena l’utente avvia il bot.<br>
+Successivamente l’utente potrà scegliere quali notizie visualizzare suddivise per squadra; una volta caricate le notizie potrà commentarle e/o votarle (like/dislike).<br>
+
+
+#### Descrizione del pannello grafico:
+Il pannello grafico è realizzato con JavaFX e permette agli amministratori di NABOO di aggiornare le notizie dai Feed o da file (.txt), gestire gli utenti, i commenti e le fonti.<br>
+Tutte le modifiche apportate dagli amministratori sul pannello grafico sono salvate sul database.
+
+#### Linguaggi/Software utilizzati:
+<ul>
+<li>Linguaggi:</li>
+<ul>
+<li>java</li>
+</ul>
+<li>Software:</li>
+<ul>
+<li>SceneBuilder</li>
+</ul>
+<li>Librerie</li>
+<ul>
+<li>Abbiamo utilizzato Maven per gestire tutte le librerie e tenere il codice pulito.</li>
+</ul>
+</ul>
+
+#### Funzionamento Telegram bot:
+<ol>
+<li>Registrazione</li>
+Gli utenti vengono registrati in automatico all’invio del comando /start (che avvia il bot), contestualmente viene salvalo lo username o il nome utente Telegram.
+<li>Visualizzazione del menù di bottoni</li>
+Il bot manda un messaggio contenente un menù di bottoni, ognuno è associato alla corrispondente squadra di Serie A.
+<li>Visualizzazione notizie</li>
+Premendo i bottoni vengono visualizzate le corrispettive notizie.
+<li>Valutazione notizia</li>
+E' anche possibile lasciare un commento o una valutazione ad ogni singola notizia.
+</ol>
+
+#### Funzionamento Pannello grafico:
+<ol>
+<li> Login </li>
+<li> Aggiornamento Notizie </li>
+Da questa sezione è possibile aggionrare le notizie sul database
+<li> Aggiunta/Rimozione feed </li>
+Da questa sezione è possibile visualizzare i feed da cui si prelevano i dati, rimuoverli o aggiungerne ulteriori
+<li> Rimozione notizie </li>
+Da questa sezione è possibile visualizzare le notizie e rimuoverle
+<li> Gestione utenti </li>
+Da questa sezione è possibile visualizzare gli utenti e in caso bloccarli
+<li> Rimozione commenti </li>
+Da questa sezione è possibile visualizzare e rimuovere i commenti effettuati su telegram 
+<li> Importa notizie da file </li>
+Da questa sezione è possibile importare ntizie da dile esterni
+<li> Profilo amministratore </li>
+Da questa sezione è possibile modificare i di accesso dell'amministrartore, e disconnetersi dal pannello
+</ol>
+
+#### Difficoltà incontrate:
+Durante la creazione del progetto abbiamo incontrato diverse difficoltà successivamente risolte; all'inzio abbiamo fatto fatica a comprendere il funzionamento dei Feed RSS, una volta capita la logica ci sono risultati molto comodi.<br>
+Abbiamo voluto implementare il database al posto del salvataggio su file perchè ci semrbava più realistico e più completo; questo ci ha creato vari problemi dovuti alla maggiore complessità del salavataggio dei dati e al collegamento con il pannello grafico.<br>
+Utiilizzando Javafx ci siamo imbattuti in diversi problemi riguardo la creazione e la visualizzazione di varie tabelle per visualizzare i dati contenuti nel database sul pannello grafico.<br>
