@@ -64,7 +64,6 @@ E' anche possibile lasciare un commento o una valutazione ad ogni singola notizi
 </ol>
 
 #### Funzionamento Pannello grafico:
-
 <ol>
 <li> Login </li>
 <li> Aggiornamento Notizie </li>
@@ -84,7 +83,6 @@ Da questa sezione è possibile modificare i di accesso dell'amministrartore, e d
 </ol>
 
 #### Difficoltà incontrate:
-feed rss
-Database --> Hibernate
-JavaFx --> tabelle
-Query
+Durante la creazione del progetto abbiamo incontrato diverse difficoltà successivamente risolte; all'inzio abbiamo fatto fatica a comprendere il funzionamento dei Feed RSS, una volta capita la logica ci sono risultati molto comodi.<br>
+Abbiamo voluto implementare il database al posto del salvataggio su file perchè ci semrbava più realistico e più completo; questo ci ha creato vari problemi dovuti alla maggiore complessità del salavataggio dei dati e al collegamento con il pannello grafico.<br>
+Utiilizzando Javafx ci siamo imbattuti in diversi problemi riguardo la creazione e la visualizzazione di varie tabelle per visualizzare i dati contenuti nel database sul pannello grafico.<br>
