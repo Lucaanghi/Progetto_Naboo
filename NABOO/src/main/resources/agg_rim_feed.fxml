@@ -130,7 +130,7 @@
             </Button>
          </children>
       </VBox>
-      <Button fx:id="aggiungi" layoutX="435.0" layoutY="422.0" mnemonicParsing="false" onAction="#aggiungiFeed" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #7CCD7C;" text="Aggiungi feed" />
+      <Button fx:id="aggiungi" layoutX="446.0" layoutY="293.0" mnemonicParsing="false" onAction="#aggiungiFeed" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #7CCD7C;" text="Aggiungi feed" />
       <TableView fx:id="tabella" layoutX="252.0" layoutY="14.0" prefHeight="172.0" prefWidth="480.0">
          <columns>
             <TableColumn fx:id="col_id_feed" prefWidth="35.99993896484375" text="ID" />
@@ -138,36 +138,36 @@
             <TableColumn fx:id="col_nomefeed" prefWidth="312.7999572753906" text="FEED" />
          </columns>
       </TableView>
-      <TextField fx:id="label_agg_squadra" layoutX="424.0" layoutY="349.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci nome squadra da aggiungere" />
-      <TextField fx:id="rim_squadra" layoutX="424.0" layoutY="229.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci nome squadra da eliminare" />
-      <Button fx:id="rimuovi" layoutX="437.0" layoutY="262.0" mnemonicParsing="false" onAction="#rimuoviFeed" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #7CCD7C;" text="Rimuovi feed" />
-      <Label layoutX="346.0" layoutY="232.0" style="-fx-font-weight: bold;" text="Squadra:">
+      <TextField fx:id="label_agg_squadra" layoutX="435.0" layoutY="220.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci nome squadra da aggiungere" />
+      <TextField fx:id="rim_squadra" layoutX="433.0" layoutY="379.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci nome squadra da eliminare" />
+      <Button fx:id="rimuovi" layoutX="446.0" layoutY="412.0" mnemonicParsing="false" onAction="#rimuoviFeed" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #7CCD7C;" text="Rimuovi feed" />
+      <Label layoutX="355.0" layoutY="382.0" style="-fx-font-weight: bold;" text="Squadra:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="434.0" layoutY="324.0" style="-fx-font-weight: bold;" text="AGGIUNGI FEED" textFill="#104e8b">
+      <Label layoutX="445.0" layoutY="195.0" style="-fx-font-weight: bold;" text="AGGIUNGI FEED" textFill="#104e8b">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="438.0" layoutY="200.0" style="-fx-font-weight: bold;" text="RIMUOVI FEED" textFill="#104e8b">
+      <Label layoutX="447.0" layoutY="350.0" style="-fx-font-weight: bold;" text="RIMUOVI FEED" textFill="#104e8b">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="346.0" layoutY="352.0" style="-fx-font-weight: bold;" text="Squadra:">
+      <Label layoutX="357.0" layoutY="223.0" style="-fx-font-weight: bold;" text="Squadra:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="label_agg_link_feed" layoutX="424.0" layoutY="384.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci link feed da aggiungere" />
-      <Label layoutX="326.0" layoutY="387.0" style="-fx-font-weight: bold;" text="Nome Feed:">
+      <TextField fx:id="label_agg_link_feed" layoutX="435.0" layoutY="255.0" prefHeight="26.0" prefWidth="208.0" promptText="Inserisci link feed da aggiungere" />
+      <Label layoutX="337.0" layoutY="258.0" style="-fx-font-weight: bold;" text="Nome Feed:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="alert_rimosso" layoutX="413.0" layoutY="299.0" textFill="#008000" />
-      <Label fx:id="alert_aggiunto" layoutX="409.0" layoutY="461.0" textFill="GREEN" />
+      <Label fx:id="alert_rimosso" layoutX="422.0" layoutY="449.0" textFill="#008000" />
+      <Label fx:id="alert_aggiunto" layoutX="420.0" layoutY="332.0" textFill="GREEN" />
    </children>
 </AnchorPane>

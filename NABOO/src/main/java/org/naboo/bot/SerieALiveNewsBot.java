@@ -193,6 +193,7 @@ class SerieALiveNewsBot extends TelegramLongPollingBot {
                         //Chiamata alla funzione che verifica se l'utente ha un ban e output su Telegram con relativo messaggio
                         int chat_id = messaggio.getChatId().intValue();
                         String verBan = verificaBan(chat_id);
+                        risposta.setReplyMarkup(null);
                         risposta.setText(verBan);
                         risposta.setChatId(update.getMessage().getChatId().toString());
                         try {
